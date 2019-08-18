@@ -11,7 +11,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 // db
-// MONGO_URI=mongodb://localhost/nodeapi
+MONGO_URI="mongodb:mongodb://runtime-error:project3@ds263917.mlab.com:63917/heroku_w6qd9c27";
 mongoose
     .connect(process.env.MONGO_URI, { useNewUrlParser: true })
     .then(() => console.log("DB Connected"));
